@@ -1,0 +1,81 @@
+body{
+    background-color: #8acdeb;
+}
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+.mug{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-top: -75px;
+    margin-left: 300px;
+    z-index: 0;
+    opacity: 0;
+}
+#mug1{
+    animation-name: mug1;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+@keyframes mug1 {
+    0% {transform: translateY(0) translateX(0) scale(0.25);
+        opacity: 0.2;
+       }
+    100% {transform: translateY(-200px) translateX(-20px) scale(1);
+         opacity: 0;
+        }
+}
+#mug2{
+    animation-name: mug2;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+@keyframes mug2 {
+    0% {
+        transform: translateY(0) translateX(0) scale(0.25);
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(-200px) translateX(20px) scale(1);
+    }
+}
+#mug3{
+    animation-name: mug3;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+@keyframes mug3 {
+    0% {transform: translateY(0) translateX(0) scale(0.25);
+        opacity: 0.2;
+       }
+    100% {transform: translateY(-200px) translateX(-20px) scale(1);
+         opacity: 0;
+        }
+}
+#mug4{
+    animation-name: mug4;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes mug4 {
+    0% {
+        transform: translateY(0) translateX(0) scale(0.25);
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(-200px) translateX(20px) scale(1);
+    }
+}
